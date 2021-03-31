@@ -1,4 +1,8 @@
 <template>
+  <div id='nav'>
+    <router-link to='/'> Home</router-link>
+    <router-link to='/contact'>Contact </router-link>
+  </div>
   <h1>{{ msg }}</h1>
   <button @click="count++">count is: {{ count }}</button>
   <p>Edit <code>components/HelloWorld.vue</code> to test hot module replacement.</p>
