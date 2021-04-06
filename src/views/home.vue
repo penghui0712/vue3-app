@@ -1,13 +1,13 @@
 <template>
   <div id='nav'>
-    <router-link to='/'> Home</router-link>
-    <router-link to='/contact'>Contact </router-link>
+    <router-link to='/' class="home"> Home</router-link>
+    <router-link to='/contact' class="contact">Contact </router-link>
   </div>
   <h1>{{ msg }}</h1>
   <button @click="count++">count is: {{ count }}</button>
   <p>Edit <code>components/HelloWorld.vue</code> to test hot module replacement.</p>
   <div v-for="(item, index) in list" :ref="setItemRef" :key=index></div>
-  <div @click="printLog">打印log</div>
+  <div @click="printLog" class="log">打印log</div>
 </template>
 
 <script>
@@ -40,3 +40,6 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+  @import "./../assets/scss/home.scss";
+</style>
